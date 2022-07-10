@@ -1,9 +1,7 @@
 #!/usr/bin/env python
 
 from PIL import Image
-from PIL import ImageColor
 from datetime import datetime
-from math import log
 
 import csv
 import gzip
