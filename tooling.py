@@ -171,7 +171,8 @@ class Logger(Analysis):
         self.rows_processed = 0
 
     def log(self, message):
-        print(message, end='\r')
+        MESSAGE_LENGTH = 30
+        print(message.ljust(MESSAGE_LENGTH), end='\r')
 
     def on_any_row(self):
         self.rows_processed += 1
